@@ -1,8 +1,0 @@
-Changelog:
-ROM:
-• Bring back Circle To Search
-• Ship TalkBack on gapps builds
-• Add back device diagnostics
-
-Device:
-• Add powershare (reverse wireless charging)

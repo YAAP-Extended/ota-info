@@ -1,6 +1,0 @@
-ROM:
-• Merged AOSP April security patch
-• OmniJaws: Add nothing weather icon pack
-
-Device:
-• No changes
