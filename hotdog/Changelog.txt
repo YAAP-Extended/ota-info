@@ -1,7 +1,0 @@
-ROM:
-• Merged AOSP April security patch
-• OmniJaws: Add nothing weather icon pack
-• Twelve: Fix crash on launch
-
-Device:
-• Fixed WiFi display (whole screen casting)
