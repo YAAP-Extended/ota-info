@@ -1,40 +1,78 @@
 ROM:
-• Merged A15 QPR2. (+ April Security Patch)
+• Merged May Security Patch)
 • Update certified props to pass PI. (again)
-• Disable system wide blurs - was causing bugs and jank.
-• Fix a freeform crash.
-• Improve slider haptics.
-• ThemePicker: Many visual improvements.
-• Launcher: Hide disabled blur settings.
-• Launcher: Fix navbar height issue in setup wizard.
-• Update certified fingerprint again....
-• Fix initial SetupWizard navbar sizing.
-  - Known regressions:
-  - Removed CTS and navbar long press to search for now.
-• Gaming Macro: Allow setting display color mode.
-• Gaming Macro: Allow enabling high touch sensitivity.
-• Statusbar net monitor: Allow hiding text.
-• Fix suppressing notification when the screen is on on boot.
-• Get rid of flashlight chip on lock screen, again.
-• Generate monochrome icons if themed icons are enabled and a monochrome icon does not exist.
-• Updated certified props to pass PI again...
-• OmniJaws: Add nothing weather icon pack.
-• Twelve: Fix crash on launch.
-• Bring back Circle To Search.
-• Other minor changes.
+• Implement Hide Navbar/IME Space option
+• Support Black Theme For Dark Mode
+• Implement per app volume control
+• Implement Hide Developer Status option
+• Implement all possible spoofing options
+• Implement Face Unlock with Paranoid Sense
+• Implement Charging Control
+• Replace AOSP UDFPS Icon
+• Implement Hide App List
+• Introduce New Refreshrate Selector Page
+• Recovery:
+- Allow skipping verification for flashing custom zip's
+- Skip Build Tag Verification
+- Allow Mounting vendor_dlkm partition for flashing custom kernels
+- Allow Downgrading only if build is userdebug or eng
+• Redesign charging ripple
+• Enable Blur on power menu
+• Tune memory management for legacy devices
+• Fix internet tile showing no service
+• Force disable play services OTA Checks
+• Rework UI/Settings for YAAEXP
+• Force Enable LTE_CA
+• Set entire screenrecord as the default option
+• Add hotspot toggle in QS internet dialog
+• Fingerprints: Increase MAX_FAILED_ATTEMPTS from 5 to 10
+• Restore wifi and cellular QS tiles
+• Introduce Volume QS Tile
+• Add Sound Tile
+• Update Ru/Uk translations
+• Launcher:
+- Bring Back Recents/App Drawer transparency
+- Implement pause app feature
+- Allow widgets to have 1 row as minimum size
+• Remove restrictions for system audio record
+• Add screenshot sound toggle
+• Label Some source side sepolicy denials
+• Fix a possible Smartspace crash
+• Vanilla: update Messaging app considerably
+• Vanilla: fix shipping Calyx Chromium
+• Many performance improvements, including but not limited to:
+- App open performance
+- Jitter improvement
+- Multitasking performance
+• Add IBM Plex font
+• Add Rosemary font
+• OTA App: Add an option to check every X hours
+• OTA App: Slightly improve settings page UX
+• OTA App: Support selecting mirror for OTA Updates
+• Fix usb tether tile states
+• Gaming mode: add high touch polling rate
+• Add HTSR QS Tile
+• And other minor changes
 
 Device:
-• Update Vendor Blobs to HyperOS 2.0.100.0.VNPMIXM
-• Implement Screen Off UDFPS Sensor(aka sofod)
-• Implement Torch Brightness Control
-• Set renderengine backend to skiavk
-• Drop Miui Camera For Now
-• Reduse UI Jittering to 3ms
-• Tune adaptive suspend properties
-• Improve AutoBrightness
-• Enable Qualcomm TrueWireless Stereo
-• Add feature flag for IPSEC_TUNNEL_MIGRATION
-• Label some sepolicy denials
-• Add support of CameraX Vendor Extensions
-• Configure cpusets and schedutil ratelimits
-• And many other changes
+• Update Vendor Blobs to HyperOS 2.0.102.0.VNPMIXM
+• Enable UFFD memory management
+• Use QCOM Implementation for Audio Effects
+• Rework StatusBar Paddings (Why hasn't anyone done this yet?!!)
+• Support Doze Single/Double Tap Sensors (Now Both Toggles Works And On AOD TOO!!)
+• Introduce GameBar v4.0
+• Implement turbo charging with 18-90w modes
+• Switch to common fingerprint hal and use new implementation
+• Use HTSR Source Implementation
+• Build Viper4AndroidFX
+• Switch to common power libperfmgr
+• Import Powerhint from OP12 And Adapt for peridot
+• Tune Powerhint For Efficiency And Performace
+• Improve Interraction Boosts and drop Useless hints
+• Configure sane uclamp defaults
+• Rework Dynamic Refreshrate Tile And Drop Per-app refreshrate
+• Implement Charging Control For Now
+• Disable speaker protection
+• Refactor Thermal Handling
+• Import Translations for Parts App
+• Improve thermal Configs
